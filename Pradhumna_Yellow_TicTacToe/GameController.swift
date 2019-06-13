@@ -9,11 +9,12 @@
 import UIKit
 
 class GameController: UIViewController {
+    
+    //initialize game model//
+    var game = GameModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     //action when box inside grid is pressed//
@@ -22,7 +23,10 @@ class GameController: UIViewController {
         print(sender.tag)
         //to add player value in box//
         if(sender.currentTitle == nil){
-                sender.setTitle("X", for: .normal)
+            //display currentPlayer value on box//
+            sender.setTitle(game.currentPlayer, for: .normal)
+            //toggle player//
+            game.movePlayed(tag: sender.tag)
         }
         
     }

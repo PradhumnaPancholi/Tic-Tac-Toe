@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F36475C22B2E15400609B55 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36475B22B2E15400609B55 /* GameModel.swift */; };
 		9F9CA3F822B16A5C00E8D4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CA3F722B16A5C00E8D4D6 /* AppDelegate.swift */; };
 		9F9CA3FA22B16A5C00E8D4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CA3F922B16A5C00E8D4D6 /* ViewController.swift */; };
 		9F9CA3FD22B16A5C00E8D4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9CA3FB22B16A5C00E8D4D6 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F36475B22B2E15400609B55 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		9F9CA3F422B16A5C00E8D4D6 /* Pradhumna_Yellow_TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pradhumna_Yellow_TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9CA3F722B16A5C00E8D4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F9CA3F922B16A5C00E8D4D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				9F9CA42722B184F500E8D4D6 /* TableVC.swift */,
 				9F9CA42922B18D4300E8D4D6 /* GameController.swift */,
 				9F9CA42B22B18F6C00E8D4D6 /* PNP_TableCell.swift */,
+				9F36475B22B2E15400609B55 /* GameModel.swift */,
 			);
 			path = Pradhumna_Yellow_TicTacToe;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				9F9CA3FA22B16A5C00E8D4D6 /* ViewController.swift in Sources */,
 				9F9CA42A22B18D4300E8D4D6 /* GameController.swift in Sources */,
 				9F9CA3F822B16A5C00E8D4D6 /* AppDelegate.swift in Sources */,
+				9F36475C22B2E15400609B55 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
