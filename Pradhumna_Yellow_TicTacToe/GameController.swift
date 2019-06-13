@@ -18,8 +18,8 @@ class GameController: UIViewController {
     
     //action when box inside grid is pressed//
     
-    @IBAction func boxPressed(_ sender: Any) {
-        print("button pressed")
+    @IBAction func boxPressed(_ sender: UIButton) {
+        print(sender.tag)
     }
     
    

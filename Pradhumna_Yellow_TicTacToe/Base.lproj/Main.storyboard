@@ -146,57 +146,36 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mco-o8-uHX">
-                                <rect key="frame" x="50" y="569.5" width="314" height="272.5"/>
+                                <rect key="frame" x="50" y="712" width="314" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Kok-eR-Mxk">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0MY-HR-MPw">
-                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="77.5"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0MY-HR-MPw">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="WfK-ez-wHu"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InB-AI-9cr">
-                                                <rect key="frame" x="121.5" y="0.0" width="71" height="77.5"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InB-AI-9cr">
+                                                <rect key="frame" x="121.5" y="0.0" width="71" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="wsp-i4-dKy"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9d-tt-qEN">
-                                                <rect key="frame" x="242.5" y="0.0" width="71.5" height="77.5"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9d-tt-qEN">
+                                                <rect key="frame" x="242.5" y="0.0" width="71.5" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="fRy-fY-4lj"/>
@@ -205,54 +184,33 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bPk-vf-8dm">
-                                        <rect key="frame" x="0.0" y="97.5" width="314" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="314" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWD-St-vZK">
-                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="77.5"/>
+                                            <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWD-St-vZK">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="ZPf-vu-V0C"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YqW-YP-6sO">
-                                                <rect key="frame" x="121.5" y="0.0" width="71" height="77.5"/>
+                                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YqW-YP-6sO">
+                                                <rect key="frame" x="121.5" y="0.0" width="71" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="ttT-zq-1Mx"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Znj-e5-h8O">
-                                                <rect key="frame" x="242.5" y="0.0" width="71.5" height="77.5"/>
+                                            <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Znj-e5-h8O">
+                                                <rect key="frame" x="242.5" y="0.0" width="71.5" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="1od-3d-3TH"/>
@@ -261,54 +219,33 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="T5R-Bh-5Lu">
-                                        <rect key="frame" x="0.0" y="195" width="314" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="100" width="314" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-bj-4RY">
-                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="77.5"/>
+                                            <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-bj-4RY">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="e4D-ri-ktC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7EB-SB-YEN">
-                                                <rect key="frame" x="121.5" y="0.0" width="71" height="77.5"/>
+                                            <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7EB-SB-YEN">
+                                                <rect key="frame" x="121.5" y="0.0" width="71" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="gRz-Vo-XB4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="if1-bL-TQu">
-                                                <rect key="frame" x="242.5" y="0.0" width="71.5" height="77.5"/>
+                                            <button opaque="NO" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="if1-bL-TQu">
+                                                <rect key="frame" x="242.5" y="0.0" width="71.5" height="30"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="X">
-                                                            <attributes>
-                                                                <font key="NSFont" size="48" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <attributedString key="attributedTitle"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="oEz-fS-Y3A"/>
