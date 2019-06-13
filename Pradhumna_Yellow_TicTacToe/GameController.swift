@@ -20,6 +20,11 @@ class GameController: UIViewController {
     
     @IBAction func boxPressed(_ sender: UIButton) {
         print(sender.tag)
+        //to add player value in box//
+        if(sender.currentTitle == nil){
+                sender.setTitle("X", for: .normal)
+        }
+        
     }
     
    
