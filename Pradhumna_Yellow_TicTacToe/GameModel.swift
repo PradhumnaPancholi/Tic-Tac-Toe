@@ -9,11 +9,16 @@
 import Foundation
 
 class GameModel {
-    
+    //currentPlayer
     var currentPlayer = "X"
+    //array to record moves//
+    var movesPlayed = Array(repeating: " ", count: 9)
     
     //when user clickes on a box//
     func movePlayed(tag: Int){
+        //to store move into array//
+        movesPlayed[tag-1] = currentPlayer
+        
         //toggle current player//
         if(currentPlayer == "X") {
             currentPlayer = "O"

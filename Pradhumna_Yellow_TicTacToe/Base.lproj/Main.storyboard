@@ -271,6 +271,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7ex-MF-Ps2"/>
                     </view>
+                    <connections>
+                        <outlet property="messenger" destination="ttJ-b9-SjL" id="CC8-CQ-LrH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKz-el-yTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
