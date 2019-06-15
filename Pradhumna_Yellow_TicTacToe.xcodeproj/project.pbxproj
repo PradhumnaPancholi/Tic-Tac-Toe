@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F32BEA322B56A9400915E31 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F32BEA222B56A9400915E31 /* UIButtonExtensions.swift */; };
+		9F32BEA522B56D0400915E31 /* WCSceenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F32BEA422B56D0400915E31 /* WCSceenVC.swift */; };
 		9F36475C22B2E15400609B55 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36475B22B2E15400609B55 /* GameModel.swift */; };
 		9F9CA3F822B16A5C00E8D4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CA3F722B16A5C00E8D4D6 /* AppDelegate.swift */; };
 		9F9CA3FA22B16A5C00E8D4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CA3F922B16A5C00E8D4D6 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F32BEA222B56A9400915E31 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		9F32BEA422B56D0400915E31 /* WCSceenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSceenVC.swift; sourceTree = "<group>"; };
 		9F36475B22B2E15400609B55 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		9F9CA3F422B16A5C00E8D4D6 /* Pradhumna_Yellow_TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pradhumna_Yellow_TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9CA3F722B16A5C00E8D4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				9F9CA42922B18D4300E8D4D6 /* GameController.swift */,
 				9F9CA42B22B18F6C00E8D4D6 /* PNP_TableCell.swift */,
 				9F36475B22B2E15400609B55 /* GameModel.swift */,
+				9F32BEA222B56A9400915E31 /* UIButtonExtensions.swift */,
+				9F32BEA422B56D0400915E31 /* WCSceenVC.swift */,
 			);
 			path = Pradhumna_Yellow_TicTacToe;
 			sourceTree = "<group>";
@@ -271,9 +277,11 @@
 				9F9CA42C22B18F6C00E8D4D6 /* PNP_TableCell.swift in Sources */,
 				9F9CA42822B184F500E8D4D6 /* TableVC.swift in Sources */,
 				9F9CA3FA22B16A5C00E8D4D6 /* ViewController.swift in Sources */,
+				9F32BEA522B56D0400915E31 /* WCSceenVC.swift in Sources */,
 				9F9CA42A22B18D4300E8D4D6 /* GameController.swift in Sources */,
 				9F9CA3F822B16A5C00E8D4D6 /* AppDelegate.swift in Sources */,
 				9F36475C22B2E15400609B55 /* GameModel.swift in Sources */,
+				9F32BEA322B56A9400915E31 /* UIButtonExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 635ZBQC2GJ;
 				INFOPLIST_FILE = Pradhumna_Yellow_TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 635ZBQC2GJ;
 				INFOPLIST_FILE = Pradhumna_Yellow_TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
