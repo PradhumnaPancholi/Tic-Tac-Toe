@@ -105,7 +105,6 @@
                                     <outlet property="datePlayed" destination="0Bv-6N-Gdx" id="SKN-Ql-psu"/>
                                     <outlet property="resultImg" destination="lMZ-i8-nLU" id="eyD-0A-I3w"/>
                                     <outlet property="whoWon" destination="ibg-M3-sJh" id="WYC-yl-N1x"/>
-                                    <segue destination="yMl-2C-9zr" kind="show" id="jHb-Oa-7Nk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -114,7 +113,15 @@
                             <outlet property="delegate" destination="lAI-kg-5m4" id="2Q2-NG-f5R"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="X's Story by PNP" id="iKK-aj-rYN"/>
+                    <navigationItem key="navigationItem" title="X's Story by PNP" id="iKK-aj-rYN">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="eAZ-7M-iaB"/>
+                        <barButtonItem key="rightBarButtonItem" title="New Game" id="YxH-Ub-btK">
+                            <color key="tintColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="yMl-2C-9zr" kind="show" id="pVk-iA-0Jx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6N-VB-00A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,31 +162,34 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kok-eR-Mxk">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="128"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0MY-HR-MPw">
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MY-HR-MPw">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="WfK-ez-wHu"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InB-AI-9cr">
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InB-AI-9cr">
                                                         <rect key="frame" x="128" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="wsp-i4-dKy"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9d-tt-qEN">
+                                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9d-tt-qEN">
                                                         <rect key="frame" x="256" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="fRy-fY-4lj"/>
@@ -190,31 +200,34 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bPk-vf-8dm">
                                                 <rect key="frame" x="0.0" y="128" width="384" height="128"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWD-St-vZK">
+                                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWD-St-vZK">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="ZPf-vu-V0C"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YqW-YP-6sO">
+                                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqW-YP-6sO">
                                                         <rect key="frame" x="128" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="ttT-zq-1Mx"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Znj-e5-h8O">
+                                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znj-e5-h8O">
                                                         <rect key="frame" x="256" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="1od-3d-3TH"/>
@@ -225,31 +238,34 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T5R-Bh-5Lu">
                                                 <rect key="frame" x="0.0" y="256" width="384" height="128"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-bj-4RY">
+                                                    <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-bj-4RY">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="e4D-ri-ktC"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7EB-SB-YEN">
+                                                    <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EB-SB-YEN">
                                                         <rect key="frame" x="128" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="gRz-Vo-XB4"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="if1-bL-TQu">
+                                                    <button opaque="NO" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if1-bL-TQu">
                                                         <rect key="frame" x="256" y="0.0" width="128" height="128"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle"/>
+                                                        <state key="normal" title="">
+                                                            <color key="titleColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="boxPressed:" destination="yMl-2C-9zr" eventType="touchUpInside" id="oEz-fS-Y3A"/>
