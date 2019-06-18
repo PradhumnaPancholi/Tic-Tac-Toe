@@ -7,17 +7,35 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameController: UIViewController {
-    
+    //outlet to display msges//
     @IBOutlet weak var messenger: UILabel!
     //initialize game model//
     var game = GameModel()
     //variable to accept touch//
     var acceptTouches = true
+    //for sound effect//
+    var player: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    //function for sound effect and player//
+    func playClickSound() {
+        //to prepare sound effect//
+        let path = Bundle.main.path(forResource: "Click", ofType: "wav")!
+        let url = URL(fileURLWithPath: path)
+        //to load file on player//
+        do{
+            player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+            player.play()
+        } catch let error as NSError{
+            print(error)
+        }
+        
     }
     
     //action when box inside grid is pressed//
@@ -29,6 +47,8 @@ class GameController: UIViewController {
         if(sender.currentTitle == nil && acceptTouches){
             //display currentPlayer value on box//
             sender.setTitle(game.currentPlayer, for: .normal)
+            //play sound effect//
+            playClickSound()
             //toggle player//
             game.movePlayed(tag: sender.tag)
             //check if game is over//

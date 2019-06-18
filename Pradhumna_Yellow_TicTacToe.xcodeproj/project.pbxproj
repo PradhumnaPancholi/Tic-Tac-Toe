@@ -20,6 +20,7 @@
 		9F9CA42822B184F500E8D4D6 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CA42722B184F500E8D4D6 /* TableVC.swift */; };
 		9F9CA42A22B18D4300E8D4D6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CA42922B18D4300E8D4D6 /* GameController.swift */; };
 		9F9CA42C22B18F6C00E8D4D6 /* PNP_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CA42B22B18F6C00E8D4D6 /* PNP_TableCell.swift */; };
+		9FC4815322B860DB007DB071 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4815222B860DB007DB071 /* Click.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		9F9CA42722B184F500E8D4D6 /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		9F9CA42922B18D4300E8D4D6 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		9F9CA42B22B18F6C00E8D4D6 /* PNP_TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNP_TableCell.swift; sourceTree = "<group>"; };
+		9FC4815222B860DB007DB071 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Click.wav; path = ../../../../Downloads/Click.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		9F9CA3F622B16A5C00E8D4D6 /* Pradhumna_Yellow_TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				9FC4815222B860DB007DB071 /* Click.wav */,
 				9F9CA3F722B16A5C00E8D4D6 /* AppDelegate.swift */,
 				9F9CA3F922B16A5C00E8D4D6 /* ViewController.swift */,
 				9F9CA3FB22B16A5C00E8D4D6 /* Main.storyboard */,
@@ -250,6 +253,7 @@
 				9F9CA40222B16A5E00E8D4D6 /* LaunchScreen.storyboard in Resources */,
 				9F9CA3FF22B16A5E00E8D4D6 /* Assets.xcassets in Resources */,
 				9F9CA3FD22B16A5C00E8D4D6 /* Main.storyboard in Resources */,
+				9FC4815322B860DB007DB071 /* Click.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
