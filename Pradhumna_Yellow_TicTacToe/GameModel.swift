@@ -67,6 +67,7 @@ class GameModel {
                     //game is over//
                     //checkFor has won//
                     gameResult = checkFor + " Won!!!"
+                    saveGame()
                     //return true and game result
                     return true
             }
@@ -75,9 +76,25 @@ class GameModel {
         //check for draw//
         if(numberOfMovesPlayed == 9) {
             gameResult = "It's a Draw"
+            saveGame()
             return true
         }
         return false
+    }
+    
+    //function to save game results//
+    func saveGame() {
+        
+        var numberOfGamesPlayed = UserDefaults.standard.integer(forKey: "numberOfGamesPlayed")
+        //increment for current game
+        numberOfGamesPlayed += 1
+        //to store number of games played//
+        UserDefaults.standard.set(numberOfGamesPlayed, forKey: "numberOfGamesPlayed")
+        //to store number of game result associated with game//
+        UserDefaults.standard.set(gameResult, forKey: "Result_" + String(numberOfGamesPlayed))
+        //for timestamp of game//
+        let currentTime = Date().timeIntervalSince1970
+        UserDefaults.standard.set(currentTime, forKey: "TimeStamp_" + String(numberOfGamesPlayed))
     }
     
 }
