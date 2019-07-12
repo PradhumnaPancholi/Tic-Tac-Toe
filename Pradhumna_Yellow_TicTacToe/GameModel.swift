@@ -93,7 +93,7 @@ class GameModel {
         //to store number of game result associated with game//
         UserDefaults.standard.set(gameResult, forKey: "Result_" + String(numberOfGamesPlayed))
         //for timestamp of game//
-        let currentTime = Date().timeIntervalSince1970
+        let currentTime = Date()
         UserDefaults.standard.set(currentTime, forKey: "TimeStamp_" + String(numberOfGamesPlayed))
     }
     

@@ -40,11 +40,15 @@ class TableVC: UITableViewController{
         let numberOfGamesPlayed = UserDefaults.standard.integer(forKey: "numberOfGamesPlayed")
         let thisCellIndex = numberOfGamesPlayed  - indexPath.row //to get data in reverse order//
         let gameResult = UserDefaults.standard.string(forKey: "Result_" + String(thisCellIndex))
-        let timeStamp = UserDefaults.standard.double(forKey: "TimeStamp_" + String(thisCellIndex))
+        let timeStamp = UserDefaults.standard.object(forKey: "TimeStamp_" + String(thisCellIndex)) as! Date
         
+        //dateformatter setup/config//
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .short
 
         // Configure the cell && and to display data accordingly//
-        cell.datePlayed.text = String(timeStamp)
+        cell.datePlayed.text = dateFormatter.string(from: timeStamp)
         cell.whoWon.text = gameResult
         if( gameResult == "X Won!!!"){
             cell.resultImg.image = UIImage(named: "yellow_win")
