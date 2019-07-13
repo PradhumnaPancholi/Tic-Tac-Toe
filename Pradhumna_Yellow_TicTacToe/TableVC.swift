@@ -41,6 +41,8 @@ class TableVC: UITableViewController{
         let thisCellIndex = numberOfGamesPlayed  - indexPath.row //to get data in reverse order//
         let gameResult = UserDefaults.standard.string(forKey: "Result_" + String(thisCellIndex))
         let timeStamp = UserDefaults.standard.object(forKey: "TimeStamp_" + String(thisCellIndex)) as! Date
+        //for order of moves of current cell//
+        cell.orderOfMoves = (UserDefaults.standard.array(forKey: "OrderOfMoves_" + String(thisCellIndex)) as! [Int])
         
         //dateformatter setup/config//
         let dateFormatter = DateFormatter()
@@ -59,5 +61,22 @@ class TableVC: UITableViewController{
 
         return cell
     }
+    
+//---------------------------------------------------------------------------------------//
+    //for showing game history//
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //for new game
+        if(segue.identifier == "newGame") {
+            return
+        }
+        
+        //send data for game history//
+        let thisCell = sender as! PNP_TableCell
+        
+        let destinationVC = segue.destination as! GameController
+        destinationVC.isReplay = true
+        destinationVC.orderOfMoves = thisCell.orderOfMoves!
+    }
+    
 
 }

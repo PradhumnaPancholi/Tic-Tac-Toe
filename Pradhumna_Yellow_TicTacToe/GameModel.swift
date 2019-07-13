@@ -19,6 +19,8 @@ class GameModel {
     var checkFor = "O"
     //variable to store result//
     var gameResult = ""
+    //variable to record order of movies for replay//
+    var orderOfMoves = [Int]()
     
     
     //winning combinations//
@@ -32,9 +34,13 @@ class GameModel {
         [1,5,9],
         [3,5,7]
     ]
+    //for replay mode//
+    var isReplay = false
     
     //when user clickes on a box//
     func movePlayed(tag: Int){
+        //to store order of moves//
+        orderOfMoves.append(tag)
         //for number of moves//
         numberOfMovesPlayed += 1
         //to store move into array//
@@ -84,7 +90,11 @@ class GameModel {
     
     //function to save game results//
     func saveGame() {
-        
+        //to avoid creating a duplicate copy while replay//
+        if(isReplay){
+            return
+        }
+        //else save//
         var numberOfGamesPlayed = UserDefaults.standard.integer(forKey: "numberOfGamesPlayed")
         //increment for current game
         numberOfGamesPlayed += 1
@@ -95,6 +105,8 @@ class GameModel {
         //for timestamp of game//
         let currentTime = Date()
         UserDefaults.standard.set(currentTime, forKey: "TimeStamp_" + String(numberOfGamesPlayed))
+        //for order of moves for game history//
+        UserDefaults.standard.set(orderOfMoves, forKey: "OrderOfMoves_" + String(numberOfGamesPlayed))
     }
     
 }

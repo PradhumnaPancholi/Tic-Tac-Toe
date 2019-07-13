@@ -18,9 +18,26 @@ class GameController: UIViewController {
     var acceptTouches = true
     //for sound effect//
     var player: AVAudioPlayer!
+    
+    var orderOfMoves = [Int]()
+    
+    var isReplay = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //to play replay//
+        if(isReplay) {
+            //for replay//
+            var delay = 0.0
+            acceptTouches = false
+            game.isReplay = true
+            for move in orderOfMoves {
+                delay += 1
+                DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: {self.playMove(move)}) 
+            }
+        }else {
+            //do nothing //
+        }
     }
     //function for sound effect and player//
     func playClickSound() {
@@ -45,23 +62,29 @@ class GameController: UIViewController {
         print(game.gameResult)
         //to add player value in box//
         if(sender.currentTitle == nil && acceptTouches){
-            //display currentPlayer value on box//
-            sender.setTitle(game.currentPlayer, for: .normal)
-            //play sound effect//
-            playClickSound()
-            //toggle player//
-            game.movePlayed(tag: sender.tag)
-            //check if game is over//
-            if(game.checkIfGameIsOver()) {
-                messenger.text = game.gameResult
-                //to stop accepting new touches//
-                acceptTouches = false
-            }else{
-                //displaying message for next turn//
-                messenger.text = "\(game.currentPlayer)'s turn"
-            }
+            playMove(sender.tag)
         }else{
-            
+            //do nothing//
+        }
+    }
+    
+    //function to play move ///
+    func playMove(_ tag: Int) {
+        let currentButton = view.viewWithTag(tag) as! UIButton
+        //display currentPlayer value on box//
+        currentButton.setTitle(game.currentPlayer, for: .normal)
+        //play sound effect//
+        playClickSound()
+        //toggle player//
+        game.movePlayed(tag: tag)
+        //check if game is over//
+        if(game.checkIfGameIsOver()) {
+            messenger.text = game.gameResult
+            //to stop accepting new touches//
+            acceptTouches = false
+        }else{
+            //displaying message for next turn//
+            messenger.text = "\(game.currentPlayer)'s turn"
         }
     }
     

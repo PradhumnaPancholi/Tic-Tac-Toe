@@ -15,6 +15,9 @@ class PNP_TableCell: UITableViewCell {
     @IBOutlet weak var resultImg: UIImageView!
     @IBOutlet weak var datePlayed: UILabel!
     
+    //for order of moves//
+    var orderOfMoves : [Int]?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
