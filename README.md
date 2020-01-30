@@ -19,3 +19,7 @@ Built for devices running iOS 11 and above.
 1. Welcome Screen
 
 ![Welcome Screen](./Snapshots/WelcomeScreen.png)
+
+2. History Screen
+
+![History Screen](./Snapshots/History.png)
