@@ -23,3 +23,7 @@ Built for devices running iOS 11 and above.
 2. History Screen
 
 ![History Screen](./Snapshots/History.png)
+
+3. Game Board
+
+![Game Board](./Snapshots/GameBoard.png)
