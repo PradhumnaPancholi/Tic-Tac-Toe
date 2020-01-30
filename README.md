@@ -27,3 +27,7 @@ Built for devices running iOS 11 and above.
 3. Game Board
 
 ![Game Board](./Snapshots/GameBoard.png)
+
+4. Replay 
+
+![Replay](./Snapshots/Replay.gif)
