@@ -13,3 +13,11 @@ A tic-tac-tor game built for iOS that stores previous scores. In addition to tha
 ## Target/Platform:-
 
 Built for devices running iOS 11 and above.
+
+## Screens:-
+
+1. Welcome Screen
+![Image](./Snapshots/WelcomeScreen.png)
+
+2. Main Screen
+![Image](./Snapshots/MainScreen.png)
